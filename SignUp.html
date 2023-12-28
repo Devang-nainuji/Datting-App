@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <script src="https://kit.fontawesome.com/29a781fb53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mobile">
+            <h1>SignUp</h1>
+            <div class="form">
+                <form>
+                    <div class="name">
+                        <div class="firstname">
+                            <input type="text" id="fn">
+                            <p>First Name: </p>
+                            <span id="note1"></span>
+                        </div>
+                        <div class="lastname">
+                            <input type="text" id="ln">
+                            <p>Last Name: </p>
+                            <snap id="note2"></snap>
+                        </div>
+                    </div>
+                    <div class="mob">
+                        <input type="number" id="mob_no">
+                        <p>Mobile No: </p>
+                        <span id="note3"></span>
+                    </div>
+                    <div class="gender">
+                        <p>Gender: </p>
+                        <div class="radio">
+                            <input type="radio" name="a" id="m" value="male">Male
+                            <input type="radio" name="a" id="f" value="female">Female
+                        </div>
+                    </div>
+                    <div class="lgender">
+                        <p>Gender you looking for: </p>
+                        <div class="lradio">
+                            <input type="radio" name="b" id="ml" value="male">Male
+                            <input type="radio" name="b" id="fl" value="female">Female
+                        </div>
+                    </div>
+                </form>
+                <div class="button">
+                    <button id="sub" onclick="load()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="SignUp.js"></script>
+</body>
+</html>

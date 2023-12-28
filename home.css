@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 785px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(145deg, skyblue,rgb(170, 28, 170), cornflowerblue );
+}
+
+.container .mobile{
+    height: 750px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: aliceblue;
+}
+
+.container .mobile #imageContainer{
+    height: 160px;
+    width: 160px;
+    border: 5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+.container .mobile #imageContainer img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.container .mobile .log2{
+    text-align: center;
+}
+.container .mobile .log2 h1{
+    font-size: 40px;
+    font-family: 'Prompt', sans-serif;
+    animation: chng 3s infinite;
+}
+@keyframes chng{
+    0%{
+    background: -webkit-linear-gradient(45deg , red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: -webkit-linear-gradient(45deg, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    100%{
+    background: -webkit-linear-gradient(45deg, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+
+.container .mobile .log2 p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container .mobile .log3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .mobile .log3 #b1{
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color:rgb(64, 0, 255);
+    color: white;
+    border: none;
+    border-radius:50px;
+    cursor: pointer;
+}
+
+.container .mobile .log3 #b2{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 50px;
+    border: 1px solid;
+    background-color: antiquewhite;
+}
+
+.container .mobile .log3 #b1:active , .container .mobile .log3 #b2:active{
+    transform: translateY(3px);
+    box-shadow: 0 0 5px 8px lightgrey;
+}
+
+.container .mobile .log4 span{
+    color: blue;
+    cursor: pointer;
+}
+

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datting WebApp</title>
+    <link rel="stylesheet" href="page1.css">
+    <script src="https://kit.fontawesome.com/29a781fb53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="mobile" id="mob">
+            <div class="navbar">
+                <h2>Datting App</h2>
+            </div>
+
+            <div class="profilebox" id="profilinfo">
+                <div class="profile" id="p1">
+                    <img src="img/Shraddha-Kapoor-keeps-it-cool-in-double-denim-look-featuring-a-bralette-and-patchy-jeans-4.jpg" alt="">
+                    <div class="text">
+                        <h3>Shraddha Kapoor</h3>
+                        <p>22</p>
+                        <p>Rajkot</p>
+                    </div>
+                    <div class="btn">
+                        <button id="nf" onclick="cross1()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="pf" onclick="heart1()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="profile" id="p4">
+                    <img src="img/Kartik-Aaryan1.jpg" alt="">
+                    <div class="text">
+                        <h3>Kartik Aryan</h3>
+                        <p>25</p>
+                        <p>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="nx" onclick="cross4()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="px" onclick="heart4()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="profile" id="p2">
+                    <img src="img/katrina-kaif-014945-1x1.jpg" alt="">
+                    <div class="text">
+                        <h3>Ketrina Kaif</h3>
+                        <p>23 </p>
+                        <p>Junagadh </p>
+                    </div>
+                    <div class="btn">
+                        <button id="ns" onclick="cross2()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="ps" onclick="heart2()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="profile" id="p3">
+                    <img src="img/varun-dhawan-opens-up-on-being-hero-of-the-masses-001.jpg" alt="">
+                    <div class="text">
+                        <h3>Varun Dhavan</h3>
+                        <p>21</p>
+                        <p>Ahmedaabad</p>
+                    </div>
+                    <div class="btn">
+                        <button id="nt" onclick="cross3()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="pt" onclick="heart3()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="profile" id="p5">
+                    <img src="img/allu-arjun-men-s-shirt.jpeg" alt="">
+                    <div class="text">
+                        <h3>Allu Arjun</h3>
+                        <p>25</p>
+                        <p>surat</p>
+                    </div>
+                    <div class="btn">
+                        <button id="ny" onclick="cross5()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="py" onclick="heart5()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="profile" id="p7">
+                    <img src="img/ml.jpg" alt="">
+                    <div class="text">
+                        <h3>Malaika Arora</h3>
+                        <p>30</p>
+                        <p>rajkot</p>
+                    </div>
+                    <div class="btn">
+                        <button id="nz1" onclick="cross7()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="pz1" onclick="heart7()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="profile" id="p6">
+                    <img src="img/Salman_Khan_in_2023_(1)_(cropped).jpg" alt="">
+                    <div class="text">
+                        <h3>Salman Khan</h3>
+                        <p>50</p>
+                        <p>godhara</p>
+                    </div>
+                    <div class="btn">
+                        <button id="nz" onclick="cross6()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="pz" onclick="heart6()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="profile" id="p8">
+                    <img src="img/al.jpg" alt="">
+                    <div class="text">
+                        <h3>Alia Bhatt</h3>
+                        <p>30</p>
+                        <p>rajkot</p>
+                    </div>
+                    <div class="btn">
+                        <button id="nz2" onclick="cross8()"><i class="fa-solid fa-xmark"></i></button>
+                        <button id="pz2" onclick="heart8()"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <button id="ref" onclick="ref()">Refresh <i  class="fa-solid fa-rotate-right" id="refbtn"></i></button>
+            </div>
+            
+
+            <div class="chatdiv" id="chatdiv1">
+                <div class="head" >
+                    <img src="img/Shraddha-Kapoor-keeps-it-cool-in-double-denim-look-featuring-a-bralette-and-patchy-jeans-4.jpg" alt="">
+                    <h3>Shraddha Kapoor</h3>
+                </div>
+                <div class="chat-content" id="chat-content1">
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="message-input1" placeholder="Type a message...">
+                    <button id="send-button1">Send</button>
+                </div>
+            </div>
+            <div class="chatdiv" id="chatdiv2">
+                <div class="head" >
+                    <img src="img/Kartik-Aaryan1.jpg" alt="">
+                    <h3>Kartik Aryan</h3>
+                </div>
+                <div class="chat-content" id="chat-content2">
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="message-input2" placeholder="Type a message...">
+                    <button id="send-button2">Send</button>
+                </div>
+            </div>
+
+
+            <div class="msgs" id="m">
+                <input type="search" placeholder="Search" id="searchInput">
+                <div class="list" id="list">
+                    <li onclick="sha()">
+                        <div class="msg-profile">
+                            <img src="img/Shraddha-Kapoor-keeps-it-cool-in-double-denim-look-featuring-a-bralette-and-patchy-jeans-4.jpg" alt="">
+                            <div class="txt">
+                                Shraddha Kapoor
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="kar()">
+                        <div class="msg-profile">
+                            <img src="img/Kartik-Aaryan1.jpg" alt="">
+                            <div class="txt">
+                                Kartik Aryan
+                            </div>
+                        </div>    
+                    </li>
+                </div>
+            </div>
+
+
+
+            <div class="likediv" id="ld">
+                <button onclick="pl1()">
+                    <div class="like" id="pl1" >
+                        <img src="img/Shraddha-Kapoor-keeps-it-cool-in-double-denim-look-featuring-a-bralette-and-patchy-jeans-4.jpg" alt="">
+                        <div class="text">
+                            <h3>Shraddha Kapoor</h3>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="pl4()">
+                    <div class="like" id="pl4" >
+                        <img src="img/Kartik-Aaryan1.jpg" alt="">
+                        <div class="text">
+                            <h3>Kartik Aryan</h3>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="pl2()">
+                    <div class="like" id="pl2" >
+                        <img src="img/katrina-kaif-014945-1x1.jpg" alt="">
+                        <div class="text">
+                            <h3>Ketrina Kaif</h3>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="pl3()">
+                    <div class="like" id="pl3" >
+                        <img src="img/varun-dhawan-opens-up-on-being-hero-of-the-masses-001.jpg" alt="">
+                        <div class="text">
+                            <h3>Varun Dhavan</h3>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="pl5()">
+                    <div class="like" id="pl5" >
+                        <img src="img/allu-arjun-men-s-shirt.jpeg" alt="">
+                        <div class="text">
+                            <h3>Allu Arjun</h3>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="pl7()">
+                    <div class="like" id="pl7" >
+                        <img src="img/ml.jpg" alt="">
+                        <div class="text">
+                            <h3>Malaika Arora</h3>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="pl6()">
+                    <div class="like" id="pl6" >
+                        <img src="img/Salman_Khan_in_2023_(1)_(cropped).jpg" alt="">
+                        <div class="text">
+                            <h3>Salman Khan</h3>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="pl8()">
+                    <div class="like" id="pl8">
+                        <img src="img/al.jpg" alt="">
+                        <div class="text">
+                            <h3>Alia Bhatt</h3>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+
+            <div class="likeprofile" id="likeprofile">
+                <div class="x1" id="x1">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/Shraddha-Kapoor-keeps-it-cool-in-double-denim-look-featuring-a-bralette-and-patchy-jeans-4.jpg" alt="">
+                    <p><h1>Shraddha Kapoor</h1></p>
+                    <span>
+                        <li>Shraddha <span style="filter: hue-rotate(300deg); filter: brightness(2.5);">✨</span></li>
+                        <li>Living the dream!</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Rajkot</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add1" onclick="add1()">Add Friend</button>
+                        <button id="message1" onclick="message1()">Message</button>
+                    </div>
+                </div>
+                <div class="x2" id="x2">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/Kartik-Aaryan1.jpg" alt="">
+                    <p><h1>Kartik Aryan</h1></p>
+                    <span>
+                        <li>Papa Ka paro</li>
+                        <li>Royal Entry - 25th November</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add2" onclick="add2()">Add Friend</button>
+                        <button id="message2" onclick="message2()">Message</button>
+                    </div>
+                </div>
+                <div class="x3" id="x3">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/katrina-kaif-014945-1x1.jpg" alt="">
+                    <p><h1>Ketrina Kaif</h1></p>
+                    <span>
+                        <li>Papa Ka pari</li>
+                        <li>Royal Entry - 25th November</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add3" onclick="add3()">Add Friend</button>
+                        <button id="message3" onclick="message3()">Message</button>
+                    </div>
+                </div>
+                <div class="x4" id="x4">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/varun-dhawan-opens-up-on-being-hero-of-the-masses-001.jpg\" alt="">
+                    <p><h1>Varun Dhavan</h1></p>
+                    <span>
+                        <li>Papa Ka paro</li>
+                        <li>Royal Entry - 25th November</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add4" onclick="add4()">Add Friend</button>
+                        <button id="message4" onclick="message4()">Message</button>
+                    </div>
+                </div>
+                <div class="x5" id="x5">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/allu-arjun-men-s-shirt.jpeg" alt="">
+                    <p><h1>Allu Arjun</h1></p>
+                    <span>
+                        <li>Papa Ka paro</li>
+                        <li>Royal Entry - 25th November</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add5" onclick="add5()">Add Friend</button>
+                        <button id="message5" onclick="message5()">Message</button>
+                    </div>
+                </div>
+                <div class="x6" id="x6">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/ml.jpg" alt="">
+                    <p><h1>Malaika Arora</h1></p>
+                    <span>
+                        <li>Papa Ka pari</li>
+                        <li>Royal Entry - 25th November</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add6" onclick="add6()">Add Friend</button>
+                        <button id="message6" onclick="message6()">Message</button>
+                    </div>
+                </div>
+                <div class="x7" id="x7">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/Salman_Khan_in_2023_(1)_(cropped).jpg" alt="">
+                    <p><h1>Salman Khan</h1></p>
+                    <span>
+                        <li>Papa Ka paro</li>
+                        <li>Royal Entry - 25th November</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add7" onclick="add7()">Add Friend</button>
+                        <button id="message7" onclick="message7()">Message</button>
+                    </div>
+                </div>
+                <div class="x8" id="x8">
+                    <div class="back">
+                        <button onclick="back()"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    </div>
+                    <img src="img/al.jpg" alt="">
+                    <p><h1>Alia Bhatt</h1></p>
+                    <span>
+                        <li>Papa Ka pari</li>
+                        <li>Royal Entry - 25th November</li>
+                        <li>Actor</li>
+                    </span>
+                    <div class="info">
+                        <p style="font-weight: 800;"><i class="fa-solid fa-phone"></i>5252552</p> 
+                        <p style="font-weight: 800;"><i class="fa-solid fa-location-dot"></i>Jamnagar</p>
+                    </div>
+                    <div class="btn">
+                        <button id="add8" onclick="add8()">Add Friend</button>
+                        <button id="message8" onclick="message8()">Message</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="myprofile" id="myprofile">
+                    <img src="img/profile.jpg" alt="">
+                    <h1>User Name</h1>
+                    <div class="btn">
+                        <button>Edit profile</button>
+                        <button>Share profile</button>
+                    </div>
+                    <div class="extrabtn">
+                        <button>Account</button>
+                        <button>Privacy</button>
+                        <button>Notification</button>
+                        <button>Help</button>
+                        <button onclick="lgo()">Log out</button>
+                    </div>
+
+            </div>
+            
+
+
+            <div class="taskbar">
+                <button id="devahome" onclick="devhome()"><i class="fa-solid fa-house"></i></button>
+                <button onclick="likeopen()"><i class="fa-solid fa-heart"></i></button>
+                <button id="chat" onclick="chatopen()"><i class="fa-solid fa-comments"></i></button>
+                <button onclick="profile()"><i class="fa-solid fa-user"></i></button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="page1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 785px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(145deg, skyblue,rgb(170, 28, 170), cornflowerblue );
+}
+
+.container .mobile{
+    height: 750px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: aliceblue;
+}
+
+.container .mobile h1{
+    background: -webkit-linear-gradient(45deg, skyblue,rgb(170, 28, 170), cornflowerblue );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(20px);
+}
+
+.container .mobile form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:500px;
+    padding: 0 50px 50px;
+} 
+
+.container .mobile form p{
+    font-size: 18px;
+}
+
+.container .mobile .form .name{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.container .mobile .form .name input{
+    height: 20px;
+    width: 120px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid gray;
+    outline: none;
+    font-size: 15px;
+    padding: 2px 5px;
+}
+
+.container .mobile .form input[type="text"], .container .mobile .form input[type="number"]{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid gray;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    padding: 2px 5px;
+} 
+
+.container .mobile .form .name p , .container .mobile .form .mob p{
+    transform: translateY(-35px);
+}
+
+#note1,#note2,#note3{
+    color: red;
+    font-size: 15px;
+}
+
+.container .mobile .form .mob input:valid + p, .container .mobile .form .name input:valid + p{
+    transform: translateY(-50px);
+    transition: 0.3s;
+}
+
+.container .mobile .form .gender .radio, .container .mobile .form .lgender .lradio{
+    display: flex;
+    
+}
+
+.container .mobile .form .gender p, .container .mobile .form .lgender p{
+    margin-bottom: 15px;
+}
+
+.container .mobile .form .gender .radio input[type="radio"],.container .mobile .form .lgender .lradio input[type="radio"]{
+    height: 15px;
+    width: 15px;
+    margin: 0 8px 0 15px;
+    cursor: pointer;
+}
+
+.container .mobile .form .button{
+    text-align: center; 
+}
+
+.container .mobile .form .button button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(64, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}

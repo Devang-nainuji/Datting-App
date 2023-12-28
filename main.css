@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 785px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(145deg, skyblue,rgb(170, 28, 170), cornflowerblue );
+}
+
+.container .mobile{
+    height: 750px;
+    width: 350px;
+    padding: 50px 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: aliceblue;
+    position: relative;
+}
+.container .mobile .interests{
+    height: 350px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center; 
+    margin-bottom: 58px;
+}
+.choice{
+    padding: 8px 18px;
+    text-align: center;
+    font-size: 18px;
+    
+   background: orangered;
+    border-radius: 20px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.choice:active{
+    transform: translateY(5px);
+}
+.choice .check{
+    position: absolute;
+    top: -10px;
+    color: blue;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    right: 0;
+    display: none;
+}
+#next{
+    color: #fff;
+    background: blue;
+    padding: 8px 18px;
+    position: absolute;
+    font-size: 15px;
+    bottom: 80px;
+    right: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#next:active{
+    transform: translateX(5px);
+}
+
+.fa-chevron-right{
+    margin-left: 20px;
+}

@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 785px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(145deg, skyblue,rgb(170, 28, 170), cornflowerblue );
+}
+
+.container .mobile{
+    height: 750px;
+    width: 350px; 
+    border: 5px solid black;
+    border-radius: 25px;
+    background-image: url(img/background.jpg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .mobile .navbar{
+    text-align: center;
+    padding: 15px;
+    background-color: deeppink;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: aliceblue;
+}
+
+.container .mobile .taskbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 341px;
+    background-color: deeppink;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    
+}
+
+.container .mobile .taskbar button{
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .mobile .profilebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    position: relative;
+}
+
+
+.container .mobile .profilebox .profile{
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(241, 97, 147);
+    border-radius: 20px;
+    /* border: 3px solid black; */
+    box-shadow: 0 0 15px 2px pink;
+    position: absolute;
+    /* animation-delay: 2s; */
+}
+@keyframes myAnim {
+    0%{
+        transform: translateY(0) translateX(0);
+        transform-origin: 0% 100%;
+    }
+    100%{
+        transform: translateX(0) rotate(-90deg);
+        transform-origin: 0% 100%;
+        opacity: 0;
+    }  
+}
+
+@keyframes myAnime {
+    0%{
+        transform: translateY(0) translateX(0);
+        transform-origin: 100% 100%;
+    }
+    100%{
+        transform: translateX(0) rotate(90deg);
+        transform-origin: 100% 100%;
+        opacity: 0;  
+    }
+}
+
+.container .mobile .profilebox .profile img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.container .mobile .profilebox .profile .text{
+    text-align: left;
+    height: 100px;
+    width: 250px;
+    padding-left: 40px;
+    color: #fff;
+}
+
+.container .mobile .profilebox .profile .btn{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    height: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.container .mobile .profilebox .profile .btn button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    background-color: #1e1a1a87;
+    width: 250px;
+    height: 30px;
+    cursor: pointer;
+    padding-left: 20px;
+    outline: none;
+}
+.container .mobile .profilebox .profile .btn i{
+    font-size: 25px;
+    margin-right: 20px;
+}
+#nf, #ns, #nt, #nx, #ny, #nz, #nz1, #nz2{
+    margin-right: 3px;
+    border-bottom-left-radius: 20px;
+}
+
+#pf, #ps, #pt, #px, #py, #pz, #pz1, #pz2{
+    
+    border-bottom-right-radius: 20px;
+}
+
+#ref{
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background: deeppink;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#ref:active #refbtn{
+    transform: rotate(360deg);
+    transition: 0.4s;
+    /* display: none; */
+}
+
+.chatdiv{
+    height: 630px;
+    width: 338px; 
+    background-color: aliceblue;
+    position: absolute;
+    left: 675px;
+    top: 23px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: none;
+    /* left: 0;
+    right: 0; */
+}
+
+.chatdiv .head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+    width: 280px;
+    background-color: aliceblue;
+    border-top-left-radius: 15px;
+   
+}
+
+.chatdiv .head img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid deeppink;
+}
+
+
+
+.chatdiv .chat-content {
+    height: 575px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-image: url(img/background.jpg);
+}
+
+.chatdiv .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.chatdiv input[type="text"] {
+    flex: 1;
+    height: 30px;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.chatdiv button {
+    background-color: deeppink;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+/* User A's messages */
+.message-user-a {
+    background-color: deeppink;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0;
+    clear: both;
+    max-width: 70%;
+    float: left;
+}
+
+/* User B's messages */
+.message-user-b {
+    background-color: orangered;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0;
+    clear: both;
+    max-width: 70%;
+    float: right;
+}
+
+.msgs{
+    height: 630px;
+    width: 338px; 
+    display: none;
+    background-image: url(img/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 675px;
+    top: 80px;
+  }
+   .msgs li{
+    list-style: none;
+  }
+
+   .msgs input{
+    margin: 20px 20px;
+    height: 40px;
+    border-radius: 10px;
+    width: 300px;
+    padding: 0 20px;
+  }
+ 
+   .msg-profile{
+    display: flex;
+    margin: 20px 10px;
+  }
+   .msg-profile:hover{
+    background: pink;
+    border: 2px solid deeppink;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+   .msg-profile .txt{
+    display: flex;
+    font-weight: 800;
+    flex-direction: column;
+    margin: 10px 0 0 20px;
+  }
+   .msg-profile img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+
+.likediv{
+    height: 630px;
+    width: 338px; 
+    background-color: aliceblue;
+    position: absolute;
+    left: 675px;
+    top: 80px;
+    display: none;
+    gap: 6px;
+    grid-template-columns: auto auto ;
+    overflow-y:scroll;
+    padding: 5px 0 0 5px;
+}
+
+
+.likediv  .like{
+    height: 180px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(241, 97, 147);
+    box-shadow: 0 0 15px 2px pink;
+    cursor: pointer;
+}
+
+.likediv .like img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* 
+#pl1, #pl2, #pl3, #pl4, #pl5, #pl6, #pl7, #pl8{
+    display: none;
+} */
+
+
+.likeprofile{
+    height: 630px;
+    width: 338px; 
+    background-color: aliceblue;
+    position: absolute;
+    left: 675px;
+    top: 80px;
+    display: none;
+    gap: 10px;
+    /* display: flex; */
+    justify-content: center;
+    padding: 5px 0 0 5px;
+    background-image: url(img/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+
+.back button{
+    background: transparent;
+    border: none;
+    outline: none;
+    transform: translateX(-140px);
+    cursor: pointer;
+}
+
+.back button .fa-arrow-left-long{
+    font-size: 20px;
+}
+
+.likeprofile .x1, .x2, .x3, .x4, .x5, .x6, .x7, .x8{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+}
+
+
+.likeprofile .x1 span, .x2 span, .x3 span, .x4 span, .x5 span, .x6 span, .x7 span, .x8 span{
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 30px 0;
+    width: 250px;
+}
+
+
+.likeprofile img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid deeppink;
+    margin-bottom: 30px;
+}
+
+.likeprofile .info, .likeprofile .btn{
+    display:flex ;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.likeprofile .info p i{
+    margin-right: 15px;
+}
+
+.likeprofile .btn button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.likeprofile .btn button:active{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px 2px deeppink;
+    cursor: progress;
+    border: 2px solid white;
+    background-color: deeppink;
+    color: white;
+}
+
+
+.myprofile{
+    height: 630px;
+    width: 338px; 
+    background-color: aliceblue;
+    position: absolute;
+    left: 675px;
+    top: 80px;
+    display: none;
+    /* display: flex; */
+    /* left: 0;
+    right: 0; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+
+}
+
+
+.myprofile img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid deeppink;
+    margin-bottom: 30px;
+}
+
+
+.myprofile .btn{
+    display:flex ;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.myprofile .btn button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.myprofile .btn button:active{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px 2px deeppink;
+    cursor: progress;
+    border: 2px solid white;
+    background-color: deeppink;
+    color: white;
+}
+
+.myprofile .extrabtn{
+    display:flex ;
+    flex-direction: column;
+    width: 338px;
+}
+
+.myprofile .extrabtn button{
+    height: 40px;
+    margin-top:10px ;
+    padding-left: 15px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    text-align: left;
+}
+
+.myprofile .extrabtn button:hover{
+    background: pink;
+    border: 2px solid deeppink;
+    border-radius: 10px;
+}
